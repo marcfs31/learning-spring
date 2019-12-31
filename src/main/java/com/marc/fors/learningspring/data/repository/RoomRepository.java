@@ -6,6 +6,4 @@ import org.springframework.stereotype.Repository;
 import com.marc.fors.learningspring.data.entity.Room;
 
 @Repository
-public interface RoomRepository extends CrudRepository<Room, Long>{
-	
-}
+public interface RoomRepository extends CrudRepository<Room, Long>{}
