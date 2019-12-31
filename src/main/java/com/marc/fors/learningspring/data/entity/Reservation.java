@@ -1,12 +1,12 @@
 package com.marc.fors.learningspring.data.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -24,7 +24,7 @@ public class Reservation {
 	private long guestId;
 
 	@Column(name = "res_date")
-	private String resDate;
+	private Date resDate;
 
 	public long getReservationId() {
 		return reservationId;
@@ -50,11 +50,11 @@ public class Reservation {
 		this.guestId = guestId;
 	}
 
-	public String getResDate() {
+	public Date getResDate() {
 		return resDate;
 	}
 
-	public void setResDate(String resDate) {
+	public void setResDate(Date resDate) {
 		this.resDate = resDate;
 	}
 
