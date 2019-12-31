@@ -1,6 +1,7 @@
 package com.marc.fors.learningspring.data.entity;
 
-import java.util.Date;
+
+import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -24,7 +25,7 @@ public class Reservation {
 	private long guestId;
 
 	@Column(name = "res_date")
-	private Date resDate;
+	private Date reservationDate;
 
 	public long getReservationId() {
 		return reservationId;
@@ -51,11 +52,11 @@ public class Reservation {
 	}
 
 	public Date getResDate() {
-		return resDate;
+		return reservationDate;
 	}
 
 	public void setResDate(Date resDate) {
-		this.resDate = resDate;
+		this.reservationDate = resDate;
 	}
 
 }
